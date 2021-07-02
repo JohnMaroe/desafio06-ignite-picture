@@ -29,9 +29,7 @@ export default function Home(): JSX.Element {
     // TODO AXIOS REQUEST WITH PARAM
     async ({ pageParam = null }) => {
       const fetchData = await api.get('/api/images', {
-        params: {
-          after: pageParam,
-        },
+        params: { after: pageParam },
       });
       return fetchData.data;
     },
@@ -44,12 +42,10 @@ export default function Home(): JSX.Element {
     return data?.pages.flatMap(d => d.data);
   }, [data]);
 
-  // TODO RENDER LOADING SCREEN
   if (isLoading) {
     return <Loading />;
   }
 
-  // TODO RENDER ERROR SCREEN
   if (isError) {
     return <Error />;
   }
