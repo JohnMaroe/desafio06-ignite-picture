@@ -4,8 +4,8 @@
 
 # Ignite - #7 challenge
 
-### Rocketseat's bootcamp seventh challenge. <br />
-This challenge gave us a reasonably constructed image upload application and tried us on adding new features to it. <br />
+### Rocketseat's bootcamp seventh challenge -> Image uploader <br />
+This challenge gave us a reasonably constructed image uploader application and tried us on adding new features to it. <br />
 New technologies used consists of:
 - React Query;
 - React Hook Form;
